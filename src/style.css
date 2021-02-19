@@ -1,0 +1,62 @@
+.container {
+  border: 1px solid #03506f;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px grey;
+  padding: 20px;
+  width: 600px;
+  display: block;
+  margin: 30px auto;
+  font-family: "Rajdhani", sans-serif;
+  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+}
+h1 {
+  padding-top: 15px;
+}
+a {
+  text-decoration: none;
+  color: #03506f;
+  cursor: pointer;
+}
+#current-location {
+  padding: 0;
+}
+#current-time {
+  margin: 0;
+}
+#current-date {
+  padding-top: 5px;
+  margin: 0;
+}
+.current-details {
+  margin: 0;
+  padding-top: 70px;
+}
+div.col-sm-4 {
+  padding-top: 80px;
+}
+span {
+  font-size: 30px;
+}
+i.fas.fa-snowflake {
+  font-size: 70px;
+}
+i {
+  font-size: 30px;
+  color: #5eaaa8;
+}
+h5 {
+  color: #a3d2ca;
+  font-weight: bold;
+}
+.six-days {
+  border: 1px solid lightgray;
+  border-radius: 10px;
+  padding: 6px;
+  text-align: center;
+}
+.six-days:hover {
+  opacity: 0.6;
+}
+.row {
+  padding: 10px;
+}

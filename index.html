@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="src/style.css" />
+    <script
+      src="https://kit.fontawesome.com/05772b8dc1.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <form id="search-form">
+        <input
+          type="text"
+          placeholder="Enter a city"
+          autofocus="on"
+          autocomplete="off"
+          id="city-input"
+        />
+        <button type="submit" class="btn btn-dark btn-sm" id="go-button">
+          Go
+        </button>
+        <button type="submit" class="btn btn-dark btn-sm" id="location-button">
+          📍
+        </button>
+      </form>
+
+      <div class="row">
+        <div class="col-sm">
+          <h1 id="city"></h1>
+          <h4>Currently</h4>
+          <p id="current-date"></p>
+          <p id="current-time"></p>
+        </div>
+        <div class="col-sm-4">
+          <span class="celcius-temp"></span>
+          <span class="measurement">
+            <a href="" id="celcius-change">°C</a> |
+            <span class="farenheit-temp"></span>
+            <a href="" id="farenheit-change">°F</a>
+          </span>
+          <i class="fas fa-snowflake"></i>
+        </div>
+
+        <div class="col-sm-4 current-details">
+          <p id="humid">Humidty:</p>
+          <p id="wind">Wind:</p>
+        </div>
+      </div>
+      <h5>6 Day Forecast</h5>
+      <div class="row">
+        <div class="col-sm six-days">
+          <p>
+            Tue.
+            <br />
+            6°
+          </p>
+          <i class="fas fa-cloud"></i>
+        </div>
+        <div class="col-sm six-days">
+          <p>
+            Wed.
+            <br />
+            9°
+          </p>
+          <i class="fas fa-cloud-rain"></i>
+        </div>
+        <div class="col-sm six-days">
+          <p>
+            Thur.
+            <br />
+            11°
+          </p>
+          <i class="fas fa-cloud"></i>
+        </div>
+        <div class="col-sm six-days">
+          <p>
+            Fri.
+            <br />
+            10°
+          </p>
+          <i class="fas fa-cloud-sun"></i>
+        </div>
+        <div class="col-sm six-days">
+          <p>
+            Sat.
+            <br />
+            6°
+          </p>
+          <i class="fas fa-cloud-rain"></i>
+        </div>
+        <div class="col-sm six-days">
+          <p>
+            Sun.
+            <br />
+            5°
+          </p>
+          <i class="fas fa-cloud-rain"></i>
+        </div>
+      </div>
+    </div>
+    <script src="src/index.js"></script>
+  </body>
+</html>
