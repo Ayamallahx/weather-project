@@ -60,3 +60,7 @@ h5 {
 .row {
   padding: 10px;
 }
+#github {
+  font-size: 12px;
+  text-align: center;
+}
